@@ -1,4 +1,4 @@
-# Lab2-SIC
+# Lab2-CSE
 
 тести до бібліотеки BinaryFlag
 притримуючись таких методів Black Box Testing: аналіз граничних
