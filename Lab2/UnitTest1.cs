@@ -12,7 +12,26 @@ namespace Lab2
         {
             Assert.Throws<ArgumentOutOfRangeException>(() => new MultipleBinaryFlag(l));
         }
-        
+        [Theory]
+        [InlineData(17179868704)]
+        public void MBF_Constructor_MaxLengthTest(ulong l)
+        {
+            var mbf = new MultipleBinaryFlag(l);
+            Assert.True(mbf.GetFlag());
+        }
+        [Theory]
+        [InlineData(17179868705)]
+        public void MBF_Constructor_MaxLengthTest_Exception(ulong l)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new MultipleBinaryFlag(l));
+        }
+        [Theory]
+        [InlineData(2)]
+        public void MBF_Constructor_MinLengthTest(ulong l)
+        {
+            var mbf = new MultipleBinaryFlag(l);
+            Assert.True(mbf.GetFlag());
+        }
         [Theory]
         [InlineData(0)]
         [InlineData(1)]
