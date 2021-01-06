@@ -4,7 +4,7 @@ using Xunit;
 
 namespace Lab2
 {
-    public class BinaryFlagTest
+    public class BlackBoxBinaryFlagTest
     {
         [Theory]
         [InlineData(18446744073709551615)]
